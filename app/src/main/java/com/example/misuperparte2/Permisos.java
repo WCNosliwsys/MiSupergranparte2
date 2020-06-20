@@ -18,12 +18,12 @@ public class Permisos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permisos);
         if ((ContextCompat.checkSelfPermission(Permisos.this,
-                android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) &&
-                (ContextCompat.checkSelfPermission(this,
-                        Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) &&
-                (ContextCompat.checkSelfPermission(this,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) &&
-                (ContextCompat.checkSelfPermission(this,
+                        android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) &&
+                        (ContextCompat.checkSelfPermission(this,
+                                Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) &&
+                        (ContextCompat.checkSelfPermission(this,
+                                Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) &&
+                        (ContextCompat.checkSelfPermission(this,
                         Manifest.permission.GET_ACCOUNTS) == PackageManager.PERMISSION_GRANTED)){
             arranque();
         } else {
